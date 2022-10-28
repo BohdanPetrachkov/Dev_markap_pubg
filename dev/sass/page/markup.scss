@@ -73,7 +73,7 @@
 
 body {
 	font-family: $font-primary;
-	color: #333;
+	color: #2E3A59;
 	background-color: #fff;
 	overflow-x: hidden;
 	display: flex;
@@ -368,6 +368,22 @@ input:checked+label {
     &:hover {
         text-decoration: none;
     }
+
+    span {
+        margin-left: 16px;
+    }
+    &.btn-user {
+        padding: 15px 25px;
+    }
+}
+
+
+input.btn.btn-primary {
+    background: 
+    url(assets/img/icon-big-right.svg) calc(100% - 34px) center no-repeat,
+    linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%) #FB8500;
+
+    padding-right: 95px;
 }
 
 .btn-primary {
@@ -381,7 +397,7 @@ input:checked+label {
     &:hover {
         background-color: $secondary-color;
         border-color: $primary-color;
-        background-image: $primary-gradient-hove;
+        background-image: $primary-gradient-hover;
         opacity: .9;
     }
 }
